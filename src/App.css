@@ -1,0 +1,54 @@
+*{
+    color: white;
+}
+:root{
+    --main-color : #03001C;
+    --sec-color:#5B8FB9 ;
+}
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#app_wrapper{
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex; 
+}
+.pomo_wrapper{
+    width: 50vw;
+}
+#todo_items_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.todo_wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column ;
+    padding-top: 4rem;
+    display: flex ;
+
+    width: 50vw;
+    align-items: center;
+}
+.line{
+    width: 1px;
+    height: 100vh;
+    background-color: grey;
+
+}
+@media  screen and (max-width: 810px) {
+    #app_wrapper{
+        flex-direction: column ;
+    }
+    .pomo_wrapper{
+        width: 100vw;
+    }
+    .todo_wrapper{
+        width: 100vw;
+        height: 100vh;
+    }
+}

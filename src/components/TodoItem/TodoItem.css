@@ -1,0 +1,47 @@
+#todocard{
+    padding: 1rem;
+    background-color: var(--sec-color);
+    height: fit-content;
+    border-radius: 100vh;
+    justify-content: space-between;
+    
+}
+.Todo_title{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    width: min-content;
+    font-size:1.4rem;
+    overflow-x: hidden;
+    text-wrap:wrap;
+    width: 15rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+
+}
+.Todo_checkbox{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: none;
+    outline: none;
+}
+#todo_title_wrapper{
+    justify-content: center;
+    align-items: center;    
+}
+
+#todo_items_wrapper{
+    padding-top: 2rem;
+}
+@media  screen and (max-width: 400px) {
+    #todocard{
+        padding: 0.5rem;
+    }
+    .Todo_title{
+        width: 10rem;
+        font-size: 1rem;
+    }
+}
+
